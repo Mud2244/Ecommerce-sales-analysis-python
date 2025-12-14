@@ -1,0 +1,104 @@
+Data loaded successfully
+
+     OrderID             Product     Category    Brand  ... TotalAmount Rating  Reviews   OrderDate
+0  ORD100000  Samsung Galaxy A14  Electronics  Samsung  ...    16284.02   1.39     1684  2024-11-11
+1  ORD100001        Nike Air Max      Fashion     Nike  ...    13290.40   2.56     3604  2024-06-22
+2  ORD100002   Bluetooth Headset  Accessories      JBL  ...    26648.76   4.98     1257  2024-05-27
+3  ORD100003  HP Pavilion Laptop    Computers       HP  ...     3665.44   1.44      662  2024-07-25
+4  ORD100004           iPhone 13  Electronics    Apple  ...    10420.74   3.73     2424  2024-02-19
+
+[5 rows x 12 columns]
+
+Dataset Info:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 10000 entries, 0 to 9999
+Data columns (total 12 columns):
+ #   Column       Non-Null Count  Dtype  
+---  ------       --------------  -----  
+ 0   OrderID      10000 non-null  object 
+ 1   Product      10000 non-null  object 
+ 2   Category     10000 non-null  object 
+ 3   Brand        10000 non-null  object 
+ 4   Platform     10000 non-null  object 
+ 5   City         10000 non-null  object 
+ 6   Price        10000 non-null  float64
+ 7   Quantity     10000 non-null  int64  
+ 8   TotalAmount  10000 non-null  float64
+ 9   Rating       10000 non-null  float64
+ 10  Reviews      10000 non-null  int64  
+ 11  OrderDate    10000 non-null  object 
+dtypes: float64(3), int64(2), object(7)
+memory usage: 937.6+ KB
+None
+
+Statistical Summary:
+              Price      Quantity   TotalAmount        Rating       Reviews
+count  10000.000000  10000.000000  10000.000000  10000.000000  10000.000000
+mean   10027.986331      3.006200  30199.572439      3.005592   2520.072200
+std     5728.261196      1.415472  23861.789828      1.154845   1443.849734
+min      105.590000      1.000000    113.550000      1.000000      0.000000
+25%     4999.862500      2.000000  11066.910000      2.010000   1275.000000
+50%    10063.600000      3.000000  23671.630000      3.005000   2537.500000
+75%    14938.430000      4.000000  44648.580000      4.000000   3767.000000
+max    19999.340000      5.000000  99993.800000      5.000000   5000.000000
+
+Missing Values:
+OrderID            0
+Product            0
+Category           0
+Brand              0
+Platform           0
+City               0
+Price              0
+Quantity           0
+TotalAmount        0
+Rating             0
+Reviews            0
+OrderDate          0
+CalculatedTotal    0
+dtype: int64
+
+Cleaned data saved
+
+Total Sales: 301995724.39
+
+Sales by Category:
+Category
+Accessories    29200970.13
+Computers      57542997.56
+Electronics    92327183.77
+Fashion        91504159.73
+Wearables      31420413.20
+Name: TotalAmount, dtype: float64
+
+Sales by Platform:
+Platform
+Amazon    9.837767e+07
+Jumia     1.016971e+08
+Souq      1.019210e+08
+Name: TotalAmount, dtype: float64
+
+Top 5 Products by Quantity:
+Product
+Xiaomi Redmi Note 12    3187
+Smartwatch FitPro       3111
+Samsung Galaxy A14      3056
+Bluetooth Headset       3043
+Nike Air Max            3040
+Name: Quantity, dtype: int64
+
+Sales by City:
+City
+Cairo         52522076.73
+Casablanca    52382993.51
+Riyadh        50364375.88
+Dubai         49177483.79
+Alexandria    48844458.99
+Giza          48704335.49
+Name: TotalAmount, dtype: float64
+
+All charts saved successfully
+
+Linear Regression Model Accuracy: 0.8847854030498882
+
+PROJECT COMPLETED SUCCESSFULLY
